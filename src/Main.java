@@ -5,18 +5,27 @@ public class Main {
 
     public static void main(String[] args) {
         String emailAddress = "john.doe.mis2016@ie.edu";
-        String formattedEmailAddress = emailAddress.replaceAll(".", "/");
+        String formattedEmailAddress = emailAddress.replace(".", "/");
 
         Random random = new Random();
-        StringBuffer word = null;
+        StringBuffer word = new StringBuffer("");
+        int Random = random.nextInt(3);
+        System.out.println("NUMBER IS : " + Random);
 
-        switch (random.nextInt(2)) {
+        switch (Random) {
             case 0:
-                word = new StringBuffer('Y');
+                word.append('Y');
+
+                break;
             case 1:
-                word = new StringBuffer('F');
+                word.append('F');
+                break;
+
             case 2:
-                word = new StringBuffer('T');
+                word.append('T');
+                break;
+
+
         }
 
         word.append('o');
