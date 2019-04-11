@@ -1,3 +1,10 @@
+ERRORS FOUND AND FIXED WITHIN THE CODE:
+
+The first error I found was StringBuffer word being initialized as a null StringBuffer, I decided to initialize it as  a StringBuffer that contained "".
+The second error I found was that the bounds for the random was 2, making it only generate 0 and 1, I decided to up the bounds to 3 to enable all cases
+The third error I found was that in each case a new stringbuffer was being initialized, instead of this I decided to append the appropriate char for each case to the empty word
+
+
 # iebis_swdev_exam_debugging
 Somebody from administration wanted to create a random phrase generators and created the code that you can find in Main.java for this purpose.
 
